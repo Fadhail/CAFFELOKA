@@ -7,7 +7,7 @@
         </div>
         <div class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
             <h1 class="font-serif text-2xl font-bold text-white shadow-xl">Nama Caffe</h1>
-            <h1 class="text-sm font-light text-gray-200 shadow-xl">Alamat sadadadadaddasdaafasfsa</h1>
+            <h1 class="text-sm font-light text-gray-200 shadow-xl">Alamat sadadadadaddasdaafasfs</h1>
         </div>
     </div>
 </div>
