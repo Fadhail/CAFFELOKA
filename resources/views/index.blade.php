@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
-  <div class="-m-6 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
+  <div class="-m-6 max-h-[850px] w-[calc(100%+48px)] overflow-scroll">
     @include('layouts.navigationIndex')
 
     <div class="max-w-screen-md py-12 mx-auto">

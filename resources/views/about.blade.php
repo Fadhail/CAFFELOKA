@@ -1,4 +1,5 @@
 <x-app-layout>
+  @yield('layouts.main')
     <div class="max-w-screen-md py-12 mx-auto">
         <div
           class="relative flex flex-col mb-12 overflow-hidden text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
