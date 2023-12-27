@@ -6,7 +6,8 @@
             class="block w-full h-full object-cover transition duration-300 transform scale-100 group-hover:scale-110" alt="" />
         <div class="absolute bottom-0 p-4 text-white transition duration-300 ease-in-out transform translate-y-0 translate-x-0 group-hover:-translate-y-1 group-hover:translate-x-3">
             <h1 class="text-2xl font-bold">372 KOPI</h1>
-            <p class="text-sm font-light">Alamat sadadadadaddasdaafasfs</p>
+            <p class="text-sm font-light">Jl. Kolonel masturi, Km.3 Cipageran Kabuci Cimahi, UTARA, Cipageran, Cimahi Utara, Cipageran, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40511
+            </p>
         </div>
     </div>
 </div>
