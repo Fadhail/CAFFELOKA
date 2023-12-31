@@ -6,12 +6,12 @@ use App\Models\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class PendaftarController extends Controller
 {
-    public function index()
+    public function pendaftar()
     {
         $users = User::all();
-        return View('main', [
+        return View('pendaftar', [
             'users' => $users
         ]);
     }

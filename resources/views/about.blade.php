@@ -1,9 +1,9 @@
 <x-app-layout>
   @yield('layouts.main')
-    <div class="max-w-screen-md py-12 mx-auto">
+    <div class="max-w-screen-lg py-12 mx-auto">
         <div
           class="relative flex flex-col mb-12 overflow-hidden text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
-          <img alt="nature" class="h-[32rem] w-full object-cover object-center"
+          <img alt="nature" class="h-[38rem] w-full object-cover object-center"
             src="https://i.pinimg.com/564x/57/81/91/578191742cfe8329715eb9c29f5db55d.jpg" />
         </div>
         <h2

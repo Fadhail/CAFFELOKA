@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PendaftarController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,9 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/admin', function () {
-    return view('main');
-});
+Route::get('/admin',[ AdminController::class, 'index']);
+
+Route::get('/pendaftar',[ PendaftarController::class, 'pendaftar']);
+
+
+

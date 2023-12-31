@@ -1,8 +1,8 @@
 <x-app-layout>
-    <div class="max-w-screen-md py-12 mx-auto">
+    <div class="max-w-screen-lg py-12 mx-auto">
         <div
           class="relative flex flex-col mb-12 overflow-hidden text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
-          <img alt="nature" class="h-[32rem] w-full object-cover object-center"
+          <img alt="nature" class="h-[38rem] w-full object-cover object-center"
             src="https://i.pinimg.com/564x/25/04/33/2504334bdd9f542d54772a7de31fc4e6.jpg" />
         </div>
         <h2
@@ -23,6 +23,7 @@
             </button>
           </a>
         </div>
+        
 
       </div>
 </x-app-layout>

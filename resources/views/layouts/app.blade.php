@@ -15,9 +15,9 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900 pt-20">
             <div class="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
-                <div class="-m-6 max-h-[850px] w-[calc(100%+48px)] overflow-scroll">
+                <div class="-m-6 max-h-[1080px] w-[calc(100%+48px)] overflow-scroll">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
