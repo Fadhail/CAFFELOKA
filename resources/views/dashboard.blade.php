@@ -16,14 +16,12 @@
 
         {{-- Admin Button --}}
         <div class="pt-20">
-        <a href="/admin">
-          <button type="button" class="items-center text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2">
-            <img src="{{ url('assets/logo/logo.png') }}" class="w-10">
-            | Admin
-            </button>
-          </a>
-        </div>
-        
-
+          <a href="/admin">
+            <button type="button" class="items-center text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2">
+              <img src="{{ url('assets/logo/logo.png') }}" class="w-10">
+              | Admin
+              </button>
+            </a>
+          </div>
       </div>
 </x-app-layout>

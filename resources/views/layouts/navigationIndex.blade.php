@@ -1,5 +1,5 @@
-<nav class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-white bg-white border rounded-none shadow-md border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<nav class="fixed top-0 z-10 block w-full max-w-full px-4 py-2 text-white bg-white border rounded-none shadow-md border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             {{-- Logo --}}
             <div class="flex items-center">
