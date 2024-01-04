@@ -1,4 +1,5 @@
 <!-- Improved Card -->
+<a href="/pembooking/form">
 <div class="relative overflow-hidden bg-gray-50 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
     <div class="absolute inset-0 bg-center dark:bg-black"></div>
     <div class="group relative flex h-full rounded-xl border border-gray-200 transition duration-300 ease-in-out group-hover:border-gray-700 dark:border-gray-700">
@@ -10,6 +11,7 @@
         </div>
     </div>
 </div>
+</a>
 
 <!-- Improved Card -->
 <div class="relative overflow-hidden bg-gray-50 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">

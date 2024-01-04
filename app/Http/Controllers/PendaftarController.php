@@ -11,8 +11,6 @@ class PendaftarController extends Controller
     public function pendaftar()
     {
         $users = User::all();
-        return View('pendaftar', [
-            'users' => $users
-        ]);
+        return View('pendaftar', ['users' => $users]);
     }
 }

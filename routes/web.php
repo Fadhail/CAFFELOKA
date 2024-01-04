@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BookerController;
 use App\Http\Controllers\PendaftarController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PembokingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,5 +46,7 @@ Route::get('/admin',[ AdminController::class, 'index']);
 
 Route::get('/pendaftar',[ PendaftarController::class, 'pendaftar']);
 
-
+Route::get('/pembooking',[ BookerController::class, 'pembooking']);
+Route::get('/pembooking/form',[ BookerController::class, 'form']);
+Route::post('/pembooking/store',[ BookerController::class, 'store']);
 

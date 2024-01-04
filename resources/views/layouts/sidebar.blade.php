@@ -10,7 +10,7 @@
     </li>
 
     <li class="nav-item">
-        <a href="pages/widgets.html" class="nav-link">
+        <a href="/pembooking" class="nav-link">
           <p>
             Data Pembooking
           </p>
