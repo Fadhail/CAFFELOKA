@@ -18,7 +18,7 @@ class BookerController extends Controller
         return view('form');
     }
 
-    public function book(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
             'nama'=>'required',
