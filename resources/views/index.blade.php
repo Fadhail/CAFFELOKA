@@ -7,7 +7,7 @@
     <title>CAFFELOKA | Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[url('assets/img/logiccoffe.jpeg')] bg-cover">
+<body class="bg-[url('https://caffecorsini.com/cdn/shop/articles/Che_cosa_vuol_dire_Caffe_Arabica.jpg?v=1695972062&width=4752')] bg-cover">
     <div class="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
   <div class="m-6 max-h-[1080px] w-[calc(100%+48px)] overflow-scroll">
     @include('layouts.navigationIndex')
