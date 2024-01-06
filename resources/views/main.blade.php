@@ -121,18 +121,32 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="card">
-              <!-- /.card-header -->
-              <div class="card-body">
-                
-                {{-- content --}}
+      <!-- small box -->
+      <div class="small-box bg-danger max-">
+        <div class="inner">
+          <h3>{{ $jumlah_pendaftar }}</h3>
 
-              </div>
-            </div>
+          <p>Pendaftar</p>
         </div>
-    </div>  
+        <div class="icon">
+          <i class="ion ion-pie-graph"></i>
+        </div>
+        <a href="/pendaftar" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+
+      <!-- small box -->
+      <div class="small-box bg-danger max-">
+        <div class="inner">
+          <h3>{{ $jumlah_pembooking }}</h3>
+
+          <p>Pembooking</p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-pie-graph"></i>
+        </div>
+        <a href="/pembooking" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+    </div> 
     </section>
     <!-- /.content -->
   </div>

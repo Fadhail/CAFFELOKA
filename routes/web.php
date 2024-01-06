@@ -42,10 +42,9 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/admin',[ AdminController::class, 'index']);
+Route::get('/admin',[ AdminController::class, 'main']);
 
 Route::get('/pendaftar',[ PendaftarController::class, 'pendaftar']);
-
 Route::get('/pembooking',[ BookerController::class, 'pembooking']);
 Route::get('/pembooking/form',[ BookerController::class, 'form']);
 Route::post('/pembooking/store',[ BookerController::class, 'store']);
