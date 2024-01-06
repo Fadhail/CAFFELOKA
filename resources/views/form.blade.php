@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Booking Form</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Booking Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Additional Custom Styles */
+    .input-style {
+      padding: 0.75rem;
+    }
+
+    .button-style {
+      padding: 0.75rem 2rem;
+    }
+
+    .title-style {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      color: #333;
+      /* Change the color as needed */
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  </style>
 </head>
-<body>
-<form action="/pembooking/store" method="POST" class="max-w-sm mx-auto">
-    @csrf
-    <div class="mb-5">
-      <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-      <input type="text" name="nama" placeholder="nama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+
+<body class="bg-gray-100 dark:bg-gray-800">
+  <div class="container mx-auto py-8">
+    <h1 class="title-style">BOOKING AT CAFFELOKA</h1>
+    <div class="flex justify-center items-center">
+      <form action="/pembooking/store" method="POST" class="bg-white dark:bg-gray-900 shadow-md rounded-lg p-8 max-w-md w-full">
+        @csrf
+        <div class="mb-6">
+          <label for="nama" class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Nama</label>
+          <input type="text" name="nama" placeholder="Nama" class="input-style rounded-lg w-full" required>
+        </div>
+        <div class="mb-6">
+          <label for="jam" class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Jam Kedatangan</label>
+          <input type="text" name="jam" placeholder="Jam" class="input-style rounded-lg w-full" required>
+        </div>
+        <div class="mb-6">
+          <label for="pesan" class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Pesan</label>
+          <textarea name="pesan" placeholder="Pesan" class="input-style rounded-lg w-full h-20 resize-none" required></textarea>
+        </div>
+        <button type="submit" name="submit" value="save" class="button-style bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm w-full">
+          Pesan</button>
+      </form>
     </div>
-    <div class="mb-5">
-      <label for="jam" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jam Kedatangan</label>
-      <input type="text" name="jam" placeholder="jam" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-    </div>
-    <div class="mb-5">
-      <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pesan</label>
-      <input type="text" name="pesan" placeholder="pesan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-    </div>
-    <div class="flex items-start mb-5">
-      <div class="flex items-center h-5">
-        <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
-      </div>
-      <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
-    </div>
-    <button type="submit" name="submit" value="save" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Pesan</button>
-  </form>
-  
+  </div>
 </body>
+
 </html>
