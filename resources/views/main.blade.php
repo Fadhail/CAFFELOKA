@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin</title>
+  <title>Admin | Pendaftar</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -12,7 +12,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition">
+<body class="hold-transition sidebar-mini">
     <div class="wrapper">
 
         <!-- Preloader -->
@@ -68,14 +68,14 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/admin">
+    <a href="/admin" class="brand-link">
         <img src="{{url('assets/logo/logo.png')}}" alt="Logo" class="w-75">
       </a>
   
       <!-- Sidebar -->
       <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        {{-- <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
             <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
@@ -106,12 +106,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Pendaftar</h1>
+            <h1>Dashboard</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Pendaftar</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div>
         </div>
@@ -121,7 +121,7 @@
 
     <!-- Main content -->
     <section class="content">
-      <!-- small box -->
+              <!-- small box -->
       <div class="small-box bg-danger max-">
         <div class="inner">
           <h3>{{ $jumlah_pendaftar }}</h3>
@@ -146,7 +146,6 @@
         </div>
         <a href="/pembooking" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
       </div>
-    </div> 
     </section>
     <!-- /.content -->
   </div>
@@ -176,3 +175,4 @@
 <script src="../../dist/js/demo.js"></script>
 </body>
 </html>
+
