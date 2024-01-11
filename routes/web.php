@@ -57,8 +57,15 @@ Route::get('/caffes/create', [Caffe2Controller::class, 'create'])->name('caffes.
 Route::get('/caffes', [Caffe2Controller::class, 'index'])->name('caffes.index');
 Route::post('/caffes', [Caffe2Controller::class, 'store'])->name('caffes.store');
 Route::get('/caffes/{id}', [Caffe2Controller::class, 'show'])->name('caffes.show');
-Route::get('/caffes/{id}/edit', [Caffe2Controller::class, 'edit'])->name('caffes.edit');
-Route::put('/caffes/{id}', [Caffe2Controller::class, 'update'])->name('caffes.update');
+
+// Route::get('/caffes/{id}/edit', [Caffe2Controller::class, 'edit'])->name('caffes.edit');
+// Route::put('/caffes/{id}', [Caffe2Controller::class, 'update'])->name('caffes.update');
+
 Route::delete('/caffes/{id}', [Caffe2Controller::class, 'destroy'])->name('caffes.destroy');
 Route::get('/admin/caffe', [caffe2controller::class, 'index']);
 Route::post('/ain/caffe/upload', [caffe2controller::class, 'store'])->name('caffe.upload');
+
+
+// Edit and Update routes for Caffe records
+Route::get('/caffe/{id}/edit', [Caffe2Controller::class, 'edit'])->name('caffes.edit');
+Route::put('/caffe/{id}', [Caffe2Controller::class, 'update'])->name('caffes.update');

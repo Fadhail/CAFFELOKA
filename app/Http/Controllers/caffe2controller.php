@@ -42,7 +42,11 @@ class Caffe2Controller extends Controller
             return redirect()->back()->with('success', 'Caffe created successfully!');
         }
     }
-
+    public function edit($id)
+    {
+        $caffe = Caffe::find($id);
+        return view('caffe.formedit', compact('caffe'));
+    }
     public function update(Request $request, $id)
     {
         // Find the Caffe record by ID

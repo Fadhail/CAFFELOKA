@@ -1,41 +1,43 @@
-<!-- resources/views/caffe/editcaffe.blade.php -->
+<x-app-layout>
+    <div class="container mx-auto p-4">
+        <div class="flex items-center mb-4">
+            <h2 class="text-2xl font-bold ml-4">Edit Caffe</h2>
+        </div>
 
-@extends('layouts.app') <!-- Make sure to adjust the layout as needed -->
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
 
-@section('content')
-
-<div class="card">
-    <div class="card-header">
-        <h3 class="card-title">Edit Caffe</h3>
-    </div>
-    <!-- /.card-header -->
-    <div class="card-body">
-        <!-- Form for editing a cafe -->
-        <form action="{{ route('caffes.update', ['id' => $caffe->id]) }}" method="POST" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('caffes.update', $caffe->id) }}" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
-            <!-- Add form fields for editing cafe details -->
-            <div class="form-group">
-                <label for="namacaffe">Nama Caffe:</label>
-                <input type="text" name="namacaffe" class="form-control" value="{{ $caffe->namacaffe }}" required>
+            <div class="mb-4">
+                <label for="namacaffe" class="block text-sm font-medium text-gray-600">Nama Caffe:</label>
+                <input type="text" name="namacaffe" class="mt-1 p-2 border rounded-md w-full" value="{{ $caffe->namacaffe }}" required>
             </div>
 
-            <div class="form-group">
-                <label for="alamat">Alamat:</label>
-                <input type="text" name="alamat" class="form-control" value="{{ $caffe->alamat }}" required>
+            <div class="mb-4">
+                <label for="alamat" class="block text-sm font-medium text-gray-600">Alamat:</label>
+                <input type="text" name="alamat" class="mt-1 p-2 border rounded-md w-full" value="{{ $caffe->alamat }}" required>
             </div>
 
-            <div class="form-group">
-                <label for="foto">Foto:</label>
-                <input type="file" name="foto" class="form-control">
-                <small class="text-muted">Leave it blank if you don't want to update the photo.</small>
+            <div class="mb-4">
+                <label for="foto" class="block text-sm font-medium text-gray-600">Foto:</label>
+                <input type="file" name="foto" class="mt-1 p-2 border rounded-md w-full">
+                
+                @if($caffe->foto)
+                    <img src="{{ asset('fotoCaffe/' . $caffe->foto) }}" alt="Caffe Image" class="mt-2" style="max-width: 200px;">
+                @endif
             </div>
 
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary">Update Caffe</button>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"><a href="{{ route('caffes.index') }}" class="text-white">&lt; Back</a></button>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Update Caffe</button>
         </form>
-    </div>
-</div>
+        
 
-@endsection
+        
+    </div>
+</x-app-layout>

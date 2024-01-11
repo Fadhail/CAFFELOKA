@@ -23,7 +23,7 @@
                       <td class="px-4 py-2"><img src="{{ asset('fotoCaffe/' . $caffe->foto) }}" alt="Caffe"></td>
                       <td class="px-4 py-2">
                           <!-- Update Button -->
-                          <a href="{{ route('caffes.edit', ['id' => $caffe->id]) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</a><br>
+                          <a href="{{ route('caffes.edit', $caffe) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</a><br>
                           <br>
                           <!-- Delete Button -->
                           <form action="{{ route('caffes.destroy', ['id' => $caffe->id]) }}" method="POST" style="display: inline;">
