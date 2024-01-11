@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Booker;
+use App\Models\Caffe;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
-class BookerPolicy
+class CaffePolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -19,7 +19,7 @@ class BookerPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Booker $booker)
+    public function view(User $user, Caffe $caffe)
     {
         //
     }
@@ -35,7 +35,7 @@ class BookerPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Booker $booker)
+    public function update(User $user, Caffe $caffe)
     {
         //
     }
@@ -43,7 +43,7 @@ class BookerPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Booker $booker)
+    public function delete(User $user, Caffe $caffe)
     {
         //
     }
@@ -51,7 +51,7 @@ class BookerPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, Booker $booker)
+    public function restore(User $user, Caffe $caffe)
     {
         //
     }
@@ -59,7 +59,7 @@ class BookerPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, Booker $booker)
+    public function forceDelete(User $user, Caffe $caffe)
     {
         //
     }

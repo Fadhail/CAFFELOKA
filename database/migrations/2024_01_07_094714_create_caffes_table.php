@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bookers', function (Blueprint $table) {
+        Schema::create('caffes', function (Blueprint $table) {
             $table->id();
-            $table->string('caffe');
-            $table->string('nama');
-            $table->string('jam');
-            $table->string('pesan');
+            $table->string('namacaffe');
+            $table->text('alamat'); // Use text instead of string if needed
+            $table->string('foto')->nullable();  // Use text instead of string if needed
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bookers');
+        Schema::dropIfExists('caffes');
     }
 };

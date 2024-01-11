@@ -24,6 +24,14 @@
           </p>
         </a>
     </li>
+
+    <li class="nav-item">
+      <a href="/admin/caffe" class="nav-link">
+        <p>
+          Upload Caffe
+        </p>
+      </a>
+  </li>
 </ul>
   </nav>
   <!-- /.sidebar-menu -->

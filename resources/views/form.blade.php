@@ -37,6 +37,10 @@
       <form action="/pembooking/store" method="POST" class="bg-white dark:bg-gray-900 shadow-md rounded-lg p-8 max-w-md w-full">
         @csrf
         <div class="mb-6">
+          <label for="caffe" class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Caffe</label>
+          <input type="text" name="caffe" value="{{ $caffes->namacaffe }}" class="input-style rounded-lg w-full" readonly>
+        </div>
+        <div class="mb-6">
           <label for="nama" class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Nama</label>
           <input type="text" name="nama" placeholder="Nama" class="input-style rounded-lg w-full" required>
         </div>

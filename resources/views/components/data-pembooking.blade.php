@@ -8,6 +8,7 @@
         <thead>
         <tr>
           <th>No</th>
+          <th>Caffe</th>
           <th>Nama</th>
           <th>Jam Kedatangan</th>
           <th>Pesan</th>
@@ -17,6 +18,7 @@
               @foreach ($data as $item)
                   <tr>
                     <td>{{ $item->id }}</td>
+                    <td>{{ $item->caffe }}</td>
                     <td>{{ $item->nama }}</td>
                     <td>{{ $item->jam }}</td>
                     <td>{{ $item->pesan }}</td>
